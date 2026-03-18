@@ -55,9 +55,11 @@ http://localhost:8000/api/users
 ```
 
 ### GET /api/users
+
 Lista usuários.
 
 ### POST /api/users
+
 Cria usuário.
 
 Corpo JSON:
@@ -71,13 +73,31 @@ Corpo JSON:
 ```
 
 ### PUT /api/users?id=1
+
 Atualiza todos os campos de um usuário.
 
 ### PATCH /api/users?id=1
+
 Atualiza parcialmente um usuário.
 
 ### DELETE /api/users?id=1
+
 Remove usuário.
+
+---
+
+## Documentação Swagger
+
+Após iniciar o backend, acesse a documentação interativa em:
+
+```text
+http://localhost:8000/view/
+```
+
+Arquivos da documentação:
+
+- UI: [crud-backend/public/view/index.html](crud-backend/public/view/index.html)
+- Especificação OpenAPI: [crud-backend/public/view/openapi.json](crud-backend/public/view/openapi.json)
 
 ---
 
@@ -122,6 +142,8 @@ curl -i -X DELETE "http://localhost:8000/api/users?id=1"
 ## Arquivos importantes do backend
 
 - Entrada HTTP: [crud-backend/public/index.php](crud-backend/public/index.php)
+- Swagger UI: [crud-backend/public/view/index.html](crud-backend/public/view/index.html)
+- OpenAPI (JSON): [crud-backend/public/view/openapi.json](crud-backend/public/view/openapi.json)
 - Roteamento por método: [crud-backend/src/api.php](crud-backend/src/api.php)
 - Controllers: [crud-backend/src/controllers.php](crud-backend/src/controllers.php)
 - Regras de negócio: [crud-backend/src/services.php](crud-backend/src/services.php)
